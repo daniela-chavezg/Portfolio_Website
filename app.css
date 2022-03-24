@@ -1,0 +1,247 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: white ;
+    font-family: "Nunito", sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+#mainNavbar{
+    font-size: 1.0rem;
+    font-weight: 300;
+    background-color: #dccbed;
+    box-shadow: 2px 2px 5px grey;
+    transition: top 0.4s;
+    letter-spacing: 0.2rem;
+    padding: 0.5rem;
+}
+
+#mainNavbar .nav-link{
+    font-style: normal;
+    color: white;
+    font-weight: 400;
+    
+}
+
+#mainNavbar .nav-link:hover{
+    color: #cf94eb;
+    
+}
+
+#mainNavbar .navbar-brand:hover{
+    color: #cf94eb;
+    
+}
+
+#mainNavbar .navbar-brand{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+    
+}
+
+h1{
+    color: black;
+    border: white;
+    
+}
+
+.landing-page{
+    background-color: rgb(179,223,236);
+    height: fit-content;
+}
+
+.landing-page img{
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(75, 172, 202);
+    background-color: white;
+    transition: color 0.25s, border-color 0.25s, box-shadow 0.25s,transform 0.25s;
+   
+}
+
+.landing-page img:hover{
+    box-shadow: 2px 2px 5px pink;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+   
+}
+
+.landing-page h1{
+    letter-spacing: 0.3rem;
+    font-size: 3.2rem;
+    padding: 0.5rem;
+    color:rgb(58, 123, 160);
+}
+
+h2{
+    display: inline-block;
+    color: #ee7d69;
+    padding: 0.5rem;
+ 
+ 
+}
+
+.education-page h2{
+    color: rgb(121, 196, 146);
+}
+
+#aboutPic{
+    border-radius: 50%;
+    border: #dccbed solid;
+    border-width: 4px;
+}
+
+.about-page{
+    height: fit-content;
+}
+
+h4{
+    padding-bottom: 0.2rem;
+    color: #ffdd94;
+    font-weight: 700;
+    /* //padding-left: 1rem; */
+}
+
+p{
+    font-size: large;
+    font-weight: 400;
+    /* padding-left: 1rem; */
+}
+
+.education-page{
+    background-color:rgb(234, 245, 220);
+    height: fit-content;
+  
+}
+
+.education-page .ed-container{
+    background-color: #ffdd94;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #ceb277;
+}
+
+
+.education-page img{
+    display: inline-block;
+    max-inline-size: 15rem;
+}
+
+.education-page h4{
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 600;
+    
+}
+
+.education-page p{
+    font-weight: 400;
+}
+
+ul{
+    list-style-type: circle;
+
+}
+
+.p-img{
+    border-radius: 10px;
+    transform: scale(1);
+    transition: 1s ease;
+    
+}
+
+.project-item{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.projects-page{
+    height: fit-content;
+}
+.project-item::after{
+    content: "";
+    display: block;
+    background-color: rgb(214, 172, 172);
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition: opacity .5s ease;
+    
+}
+
+.project-item:hover:after{
+    opacity: 1;
+
+}
+
+.project-item:hover .p-img{
+    transform: scale(1);
+    
+}
+
+.project-description{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity .1s ease;
+    
+
+}
+
+.project-item:hover .project-description{
+    opacity: 1;
+}
+
+.contacts-page{
+    background-color: #f1d7e7;
+    height: fit-content;
+
+}
+
+.contacts-page h2{
+    color: rgb(219, 101, 140);
+}
+
+.social-item a{
+    color: rgb(219, 101, 140);
+    
+}
+
+#form-button{
+    background-color: rgb(219, 101, 140);
+    color:white;
+    border: none;
+    transition: color 0.25s, background-color 0.25s, box-shadow 0.25s,transform 0.25s;
+}
+
+#form-button:hover{
+    background-color: white;
+    color:rgb(219, 101, 140);
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+
+.social-item a:hover{
+    background-color: rgb(219, 101, 140);
+    color:white;
+    
+}
+
+
+.coursework-section{
+    font-size: 2.3vh;
+}
+
+
+
+/*weird padding landing page */
